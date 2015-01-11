@@ -40,7 +40,7 @@ MY_CFLAGS_Debug := \
 	-pipe \
 	-fPIC \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-g \
 	-fdata-sections \
 	-ffunction-sections \
@@ -106,7 +106,7 @@ MY_CFLAGS_Release := \
 	-pipe \
 	-fPIC \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-fno-ident \
 	-fdata-sections \
 	-ffunction-sections \

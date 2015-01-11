@@ -96,7 +96,7 @@ MY_CFLAGS_Debug := \
 	-fPIC \
 	-Wno-unused-local-typedefs \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-g \
 	-fdata-sections \
 	-ffunction-sections \
@@ -163,7 +163,7 @@ MY_CFLAGS_Release := \
 	-fPIC \
 	-Wno-unused-local-typedefs \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-fno-ident \
 	-fdata-sections \
 	-ffunction-sections \

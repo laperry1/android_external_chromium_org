@@ -557,7 +557,7 @@ test:	testfixture$(EXE) sqlite3$(EXE)
 # target is invoked by the releasetest.tcl script.
 # 
 threadtest3$(EXE): sqlite3.o $(TOP)/test/threadtest3.c $(TOP)/test/tt3_checkpoint.c
-	$(TCCX) -O2 sqlite3.o $(TOP)/test/threadtest3.c \
+	$(TCCX) -w -O3 sqlite3.o $(TOP)/test/threadtest3.c \
 		-o threadtest3$(EXE) $(THREADLIB)
 
 threadtest: threadtest3$(EXE)

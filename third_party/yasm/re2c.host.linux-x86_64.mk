@@ -52,7 +52,7 @@ MY_CFLAGS_Debug := \
 	-Wno-unused-local-typedefs \
 	-std=gnu99 \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-g \
 	-fdata-sections \
 	-ffunction-sections \
@@ -122,7 +122,7 @@ MY_CFLAGS_Release := \
 	-Wno-unused-local-typedefs \
 	-std=gnu99 \
 	-Wno-format \
-	-Os \
+	-w -O3 \
 	-fno-ident \
 	-fdata-sections \
 	-ffunction-sections \
